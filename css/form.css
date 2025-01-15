@@ -1,0 +1,321 @@
+.body {
+	font-family: sans-serif;	
+	/* background-image: url(white.jpg); */
+	background-repeat: no-repeat;
+	overflow: hidden;
+	/* background-size:cover; */
+	background:linear-gradient(270deg,#f3cece,#ffe6ee);
+}
+
+.container {
+	width: 380px;
+	margin:7% auto;
+  height:100%;
+	border-radius: 25px;
+	background-color: rgba(238, 238, 238, 0.432);
+	box-shadow: 0 0 17px #333;
+}
+
+.header {
+	text-align: center;
+	padding-top: 10px;
+}
+
+.header h1 {
+	color: #333;
+	font-size: 45px;
+	margin-bottom: 40px;
+}
+
+.main {
+	text-align: center;
+}
+
+.main .input, .button{
+	width: 300px;
+	height: 40px;
+	border:none;
+	outline: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	font-size: 15px;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.main .button {
+	padding-left: 0;
+	background-color: #fd85af !important;
+	letter-spacing: 1px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.main .button:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color: #fd85af;
+}
+.main .input:hover {
+	box-shadow: 2px 2px 5px #555;
+	background-color: #ddd;
+}
+
+.main span {
+	position: relative;
+}
+
+.main i {
+	position: absolute;
+	left: 15px;
+	color: #333;
+	font-size: 16px;
+	top: 2px;
+}
+
+.remember{
+	margin-left: -150px;
+	margin-bottom:20px;
+}
+
+.remember input[type="checkbox"]{
+	width:5%;
+	height:5%;
+	box-shadow: none;
+	/* position:relative;
+	margin-left: -100px; */
+}
+
+.link{
+	color:#607d8b;
+	margin-top:0;
+	margin-left:-50px;
+	font-size: 14px;
+	font-weight: 400;
+	padding-bottom: 40px;
+	margin-bottom:20px;
+}
+
+.link a{
+	color:#fd85af;
+	text-decoration: none;
+	font-weight:bold;
+}
+
+.link a:hover{
+	color:#f561f5;
+}
+
+/* /////////////////////////MultistepForm///////////////////////////////////// */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+/* *{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+} */
+.formbody{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #eeadcf;
+}
+
+::selection{
+  color: #fff;
+  background: #d43f8d;
+}
+
+.formcontainer{
+  width: 400px;
+  
+  background: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 50px 35px 10px 35px;
+}
+
+.formcontainer header{
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.formcontainer .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+.form-outer form{
+  display: flex;
+  width: 400%;
+}
+.form-outer form .page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.form-outer form .page .title{
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+.form-outer form .page .field{
+  width: 330px;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+.form-outer form .page .field .label{
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+.form-outer form .page .field input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+.form-outer form .page .field select{
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+.form-outer form .page .field .button{
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #d33f8d;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+.form-outer form .page .field .button:hover{
+  background: #000;
+}
+.form-outer form .page .btns .button{
+  margin-top: -20px!important;
+}
+.form-outer form .page .btns .button.prev{
+  margin-right: 3px;
+  font-size: 17px;
+}
+ .page .btns .button.next{
+  margin-left: 3px;
+}
+.formcontainer .progress-bar{
+  display: flex;
+  margin: 40px 0;
+  user-select: none;
+}
+.formcontainer .progress-bar .step{
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.formcontainer .progress-bar .step p{
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 8px;
+}
+.progress-bar .step .bullet{
+  height: 25px;
+  width: 25px;
+  border: 2px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+.progress-bar .step .bullet.active{
+  border-color: #d43f8d;
+  background: #d43f8d;
+}
+.progress-bar .step .bullet span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.progress-bar .step .bullet.active span{
+  display: none;
+}
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after{
+  position: absolute;
+  content: '';
+  bottom: 11px;
+  right: -51px;
+  height: 3px;
+  width: 44px;
+  background: #262626;
+}
+.progress-bar .step .bullet.active:after{
+  background: #d43f8d;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after{
+  display: none;
+}
+.progress-bar .step p.active{
+  color: #d43f8d;
+  transition: 0.2s linear;
+}
+.progress-bar .step .check{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.progress-bar .step .check.active{
+  display: block;
+  color: #fff;
+}
+.checkbox{
+ max-width:15px;
+ max-height: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
